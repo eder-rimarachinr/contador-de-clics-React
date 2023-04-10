@@ -8,14 +8,10 @@ function App() {
 
   const [numClics, setnumClics] = useState(0);
 
-  const manejarClic = () => {
-    console.log(numClics)
-    setnumClics(numClics + 1)
-  }
+  const manejarClic = () => setnumClics(numClics + 1);
 
-  const reiniciarClic = () => {
-    setnumClics(0)
-  }
+  const reiniciarClic = () => setnumClics(0);
+
 
   return (
     <div className="App">
